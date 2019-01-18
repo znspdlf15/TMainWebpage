@@ -1,0 +1,48 @@
+a {
+  text-decoration: none;
+}
+.logo {
+  float:left;
+}
+
+.header {
+  height:105px;
+}
+.side {
+  height:500px;
+  float:left;
+}
+
+.body {
+  width: 500px;
+  height: 1000px;
+  float: left;
+}
+
+.side_menu_item {
+  border: none;
+  /* display: inline-block */
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  /* background-color: inherit; */
+  background-color: black;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.side_menu_item a {
+  font-size: 20px;
+  color: white;
+}
+
+.header .logo img{
+  height:100px;
+}
+
+a {
+
+}
