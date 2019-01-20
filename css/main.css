@@ -1,13 +1,18 @@
 a {
   text-decoration: none;
 }
-.logo {
+.header_logo {
   float:left;
 }
 
-.header {
-  height:105px;
+.header div {
+  overflow: hidden;
 }
+
+.header_search {
+  vertical-align: middle;
+}
+
 .side {
   height:500px;
   float:left;
@@ -39,10 +44,25 @@ a {
   color: white;
 }
 
-.header .logo img{
+.header .header_logo img{
   height:100px;
 }
 
-a {
+.Aligner {
+  display: flex;
+  align-items: center;
+  vertical-align: middle;
+  justify-content: center;
+}
 
+.Aligner-item {
+  max-height: 50%;
+}
+
+.Aligner-item--top {
+  align-self: flex-start;
+}
+
+.Aligner-item--bottom {
+  align-self: flex-end;
 }
