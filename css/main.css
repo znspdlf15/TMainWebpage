@@ -9,8 +9,18 @@ a {
   overflow: hidden;
 }
 
-.header_search {
-  vertical-align: middle;
+.header_search input{
+  margin-top:25px;
+  /* position: relative; */
+}
+
+fieldset{
+  border:none;
+}
+
+#search_text{
+  height: 30px;
+  width: 300px;
 }
 
 .side {
@@ -18,7 +28,8 @@ a {
   float:left;
 }
 
-.body {
+.content {
+  padding: 20px;
   width: 500px;
   height: 1000px;
   float: left;
@@ -26,20 +37,18 @@ a {
 
 .side_menu_item {
   border: none;
-  /* display: inline-block */
   padding: 8px 16px;
   vertical-align: middle;
   overflow: hidden;
   text-decoration: none;
   color: inherit;
-  /* background-color: inherit; */
   background-color: black;
   text-align: center;
   cursor: pointer;
   white-space: nowrap
 }
 
-.side_menu_item a {
+.side_menu_item div {
   font-size: 20px;
   color: white;
 }

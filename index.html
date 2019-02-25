@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <base target="_self">
     <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="./constant/filename.json"></script>
+    <script type="text/javascript" src="./js/common.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
   </head>
   <body>
@@ -13,17 +15,15 @@
         <div class="special_bg">
           <div class="area_flex ">
             <div class="header_logo">
-              <a href="./"><img src="./img/William Logo.jpeg"></a>
+              <a href=""><img src="./img/William Logo.jpeg"></a>
             </div>
-            <div class="header_search Aligner">
-              <div class="Aligner-item">
-                <form class="" action="index.html" method="post">
-                  <fieldset>
-                    <input type="text">
-                    <input type="button" value="검색" onclick="test_func(this)">
-                  </fieldset>
-                </form>
-              </div>
+            <div class="header_search">
+              <form class="" action="index.html" method="post">
+                <fieldset>
+                  <input type="text" id="search_text">
+                  <input type="button" value="검색" onclick="click_search_button(this)">
+                </fieldset>
+              </form>
             </div>
           </div>
         </div>
@@ -32,17 +32,17 @@
       <div class="container">
         <div class="side">
           <div class="side_menu_item">
-            <a href="./" class="menu_a">자기소개</a>
+            <div href="" class="menu_a" id="self_introduction" onclick="click_self_introduction()">자기소개</div>
           </div>
           <div class="side_menu_item">
-            <a href="./" class="menu_a">프로젝트 현황</a>
+            <div href="" class="menu_a" id="project_state">프로젝트 현황</div>
           </div>
           <div class="side_menu_item">
-            <a href="./" class="menu_a">비고</a>
+            <div href="" class="menu_a" id="photo_album">사진첩</div>
           </div>
         </div>
 
-        <div class="body">
+        <div class="content" id="content">
           <img src="./img/William Logo.jpeg" width="500px">
         </div>
       </div>
